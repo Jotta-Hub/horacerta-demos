@@ -203,9 +203,9 @@ footer{padding:40px 8%;background:var(--preto2);border-top:1px solid var(--borda
 .ft-soc:hover{color:var(--branco)}
 
 @media(max-width:900px){
-  .hero{grid-template-columns:1fr}
-  .hero-dir{display:none}
-  .hero-esq{padding:100px 6% 60px}
+  .hero{grid-template-columns:1fr;position:relative}
+  .hero-dir{position:absolute;inset:0;z-index:0;opacity:.18;pointer-events:none}
+  .hero-esq{padding:100px 6% 60px;position:relative;z-index:1}
   .agen-inner{grid-template-columns:1fr}
   .servicos-grid{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
